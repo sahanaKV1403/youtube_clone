@@ -3,15 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+  //used to highlight possible problems
+  <React.StrictMode> 
+    <BrowserRouter>
+      <App />
+      {/* calls app.js */}
+    </BrowserRouter>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// npx create-react-app youtube/ (i) npm install create-react-app (ii)create-react-app youtube : to create new project
+//npm start : to execute / run
+// npm: node package Manager (to install packages);
+// npx: node package execute (executes any package even without installing)
+//npm install react-router-dom (for routing: BrowserRouter -> Routes -> Route)
+//npm install moment (formatting date and time)
+//project name should not start with caps letter. Component nmaes must start with caps letter.

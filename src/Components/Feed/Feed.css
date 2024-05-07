@@ -1,0 +1,29 @@
+.feed{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* to define number of columns. eg:100px 200px auto (3 cols last column takes available space. */
+    /*In simpler terms, this code will create columns that are at least 250px wide, but can grow in size to fill,
+     the available space in the grid container.  */
+    gap:30px 16px;
+    /* row-gap, column-gap */
+    margin-top: 15px;
+}
+.card img{
+    width:100%;
+    border-radius: 5px;
+}
+.card h2{
+    font-size: 16px;
+    font-weight:600;
+    color:#000;
+    margin:5px 0;
+}
+.card h3{
+    font-size:14px;
+    font-weight: 600;
+    color:#555;
+    margin:6px 0;
+}
+.card p{
+    font-size: 14px;
+}
